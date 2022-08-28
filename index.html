@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div class="container">
+    <h1>
+             { Cash Manager }
+    </h1>
+    <label>Bill Amount</label>
+    <input type="number" id="bill" >
+    <div class="cash_given">
+        <label>Cash Given</label>
+        <input type="number" id="cash">
+    </div>
+
+    <button id = cbutton>Calculate</button>
+    <div class="para">
+       <p id="errormsg"></p> 
+    </div>
+
+   <div class="table">
+    <table>
+        <tr>
+            <th>
+                Notes Value
+            </th>
+            <td>2000</td>
+            <td>500</td>
+            <td>200</td>
+            <td>100</td>
+            <td>50</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Notes Count</th>
+            <td class="notes"></td>
+            <td class="notes"></td>
+            <td class="notes"></td>
+            <td class="notes"></td>
+            <td class="notes"></td>
+            <td class="notes"></td>
+            <td class="notes"></td>
+            <td class="notes"></td>
+        </tr>
+    </table>
+</div>
+ </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
