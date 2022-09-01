@@ -41,7 +41,7 @@ input{
 
 .table{
   position:absolute;
-  top: 410px;
+  top: 400px;
   margin-left: 70px;
 }
 table,
@@ -67,7 +67,7 @@ th {
 }
 .para{
   position: relative;
-  top:85px;
+  top:35px;
   text-align: center;
   height: 30px;
   font-size:16px;
@@ -78,7 +78,7 @@ span{
 }
 #cbutton {
   position: fixed;
-  top: 320px;
+  top: 340px;
   display: block;
   margin:0px 300px;
   padding: 10px;
