@@ -33,7 +33,7 @@ btn.addEventListener("click", function verification() {
     if (billAmount.value > 0) {
 
 
-        if (cashGiven.value >= billAmount.value) {
+        if (Number(cashGiven.value) >= Number(billAmount.value)) {
             const returnMoney = cashGiven.value - billAmount.value;
             calculate(returnMoney);
             msg.innerHTML = "Amount to be returned is  ₹ <span>" + returnMoney + "</span>";
