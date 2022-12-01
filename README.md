@@ -5,3 +5,8 @@
  Website can save a lot of time to cashier.
  thanks for visiting.
  ![image](https://user-images.githubusercontent.com/66175237/187849121-11aeb713-3664-43a3-bc90-032abcc192e3.png)
+ 
+ ##TECH STACK
+ **HTML**
+ **CSS**
+ **JAVASCRIPT**
