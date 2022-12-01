@@ -59,6 +59,7 @@ btn.addEventListener("click", function verification() {
         if (Number(cashGiven.value) >= Number(billAmount.value)) {
             const returnMoney = cashGiven.value - billAmount.value;
             calculate(returnMoney);
+            msg.style.color="black";
             msg.innerHTML = "Amount to be returned is  ₹ <span>" + returnMoney + "</span>";
         } else {
             msghandler("Amount Given is less, Call Security!!!!");
@@ -68,7 +69,7 @@ btn.addEventListener("click", function verification() {
     }
     else {
         msghandler("Invalid amount given");
-        msg.style.color="red";
+    
     }
 
 
