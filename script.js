@@ -62,11 +62,13 @@ btn.addEventListener("click", function verification() {
             msg.innerHTML = "Amount to be returned is  ₹ <span>" + returnMoney + "</span>";
         } else {
             msghandler("Amount Given is less, Call Security!!!!");
+            msg.style.color="red";
             cleanTable();
         }
     }
     else {
         msghandler("Invalid amount given");
+        msg.style.color="red";
     }
 
 
