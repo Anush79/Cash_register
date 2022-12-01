@@ -26,28 +26,6 @@ billAmount.addEventListener("change", showinput);//shows cashdiv when there is a
 
 // billAmount.value.onchange=showinput();
 
-
-btn.addEventListener("click", function verification() {
-
-
-    if (billAmount.value > 0) {
-
-
-        if (Number(cashGiven.value) >= Number(billAmount.value)) {
-            const returnMoney = cashGiven.value - billAmount.value;
-            calculate(returnMoney);
-            msg.innerHTML = "Amount to be returned is  ₹ <span>" + returnMoney + "</span>";
-        } else {
-            msghandler("Amount Given is less, Call Security!!!!");
-        }
-    }
-    else {
-        msghandler("Invalid amount given");
-    }
-
-
-})
-
 function calculate(money_left) {
     for (let x = 0; x < value.length; x++) {
         const no_of_notes = Math.trunc(money_left / value[x]);
@@ -66,3 +44,30 @@ function calculate(money_left) {
 
 }
 
+function cleanTable(){
+    for (let x = 0; x < value.length; x++){
+        noteCount[x].innerText = "----";
+    }
+}
+
+btn.addEventListener("click", function verification() {
+
+
+    if (billAmount.value > 0) {
+
+
+        if (Number(cashGiven.value) >= Number(billAmount.value)) {
+            const returnMoney = cashGiven.value - billAmount.value;
+            calculate(returnMoney);
+            msg.innerHTML = "Amount to be returned is  ₹ <span>" + returnMoney + "</span>";
+        } else {
+            msghandler("Amount Given is less, Call Security!!!!");
+            cleanTable();
+        }
+    }
+    else {
+        msghandler("Invalid amount given");
+    }
+
+
+})
